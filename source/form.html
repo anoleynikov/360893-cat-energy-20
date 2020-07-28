@@ -76,32 +76,32 @@
             <p class="question-form__text">заполните анкету и мы подберем программу питания для вашего кота</p>
             <form class="program-selection" action="https://echo.htmlacademy.ru/courses" method="post">
                <fieldset class="naming">
-                  <label for="naming__label">имя:*</label>
-                  <input type="naming__input" class="cat-name" id="cat-name" value="барсик">
-                  <label for="naming__label">вес(кг):*</label>
-                  <input type="naming__input" class="cat-weight" id="cat-weight" value="7">
-                  <label for="naming__label">возраст(лет):</label>
-                  <input type="naming__input" class="cat-age" id="cat-age" value="7">
+                  <label class="naming__label" for="cat-name">имя:*</label>
+                  <input type="text" class="naming__input" id="cat-name" value="барсик">
+                  <label class="naming__label" for="cat-weight">вес(кг):*</label>
+                  <input type="text" class="naming__input" id="cat-weight" value="7">
+                  <label class="naming__label" for="cat-age">возраст(лет):</label>
+                  <input type="text" class="naming__input" id="cat-age" value="7">
                </fieldset>
                <fieldset class="type">
-                  <p><input class="type__slim" type="radio" name="slim" value="slim">похудение</p>
-                  <p><input class="type__pro" type="radio" name="pro" value="pro">набор массы</p>
-                  <p><input class="type__need-help" type="radio" name="need-help" value="need-help">не знаю (нужен ваш совет)</p>
+                  <label class="type__label"><input class="type__input" type="radio" name="type" value="slim" checked>похудение</label>
+                  <label class="type__label"><input class="type__input" type="radio" name="type" value="pro">набор массы</label>
+                  <label class="type__label"><input class="type__input" type="radio" name="type" value="need-help">не знаю (нужен ваш совет)</label>
                </fieldset>
                <fieldset class="cat-contacts">
                   <h2 class="cat-contacts__header">Контактные данные (владельца кота)</h2>
-                  <label for="email">e-mail:*</label>
-                  <input type="email" class="cat-contacts__email" name="email" id="email" value="kuklachev@gmail.com">
-                  <label for="phone">телефон:*</label>
-                  <input type="tel" class="cat-contacts__phone" name="phone" id="phone" value="8 (960) 900-60-90">
+                  <label class="cat-contacts__labels" for="email">e-mail:*</label>
+                  <input class="cat-contacts__input" type="email" class="cat-contacts__email" name="email" id="email" value="kuklachev@gmail.com">
+                  <label class="cat-contacts__labels" for="phone">телефон:*</label>
+                  <input class="cat-contacts__input" type="tel" class="cat-contacts__phone" name="phone" id="phone" value="8 (960) 900-60-90">
                </fieldset>
                <fieldset class="cat-habits">
                   <legend class="cat-habits__header">Комментарий</legend>
-                  <textarea name="cat-habits__cat-comment" rows="8" cols="80">расскажите обо всех повадках кота</textarea>
+                  <textarea class="cat-habits__cat-comment" name="cat-comment" rows="8" cols="80">расскажите обо всех повадках кота</textarea>
                </fieldset>
                <fieldset class="plus-functions">
                   <label class="plus-functions__labels" for="check1">сахарозаменитель</label>
-                  <input class="plus-functions__checkboxes" type="checkbox" name="chek1" id="check1" value="c1">
+                  <input class="plus-functions__checkboxes" type="checkbox" name="chek1" id="check1" value="c1" checked>
                   <label class="plus-functions__labels" for="check2">питьевая вода</label>
                   <input class="plus-functions__checkboxes" type="checkbox" name="chek2" id="check2" value="c2">
                   <label class="plus-functions__labels" for="check3">молоко</label>
@@ -109,8 +109,8 @@
                   <label class="plus-functions__labels" for="check4">витамины</label>
                   <input class="plus-functions__checkboxes" type="checkbox" name="chek4" id="check4" value="c4">
                </fieldset>
-               <button class="program-selection__submit" type="submit" class="send-request" name="request" value="отправить заявку"></button>
-               <span class="program-selection__clarification">* - обязательные поля</span>
+               <button class="program-selection__submit" type="submit" class="send-request" name="request" value="отправить заявку">отправить заявку</button>
+               <span class="program-selection__clarification">* — Обязательные поля</span>
             </form>
          </section>
       </main>
