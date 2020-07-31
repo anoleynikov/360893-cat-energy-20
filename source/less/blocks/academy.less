@@ -1,5 +1,7 @@
 .academy{
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .academy__logo{
@@ -7,6 +9,9 @@
   height: 34px;
 }
 
+.academy__logo path{
+  fill: var(--special-grey-3);
+}
 .academy__text{
   color: var(--special-dark-grey);
   font-family: Arial;
@@ -14,4 +19,16 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .academy__text{
+    padding-right: 136px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .academy__text{
+    padding-right: 22px;
+  }
 }

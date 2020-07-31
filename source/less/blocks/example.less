@@ -1,41 +1,69 @@
-.example{
-  background-color: var(--basic-grey-2);
-  padding: 20px 25px;
-}
-
 .example__header{
-  padding: 20px 25px;
-  text-align: center;
-  font-size: 36px;
-  line-height: 40px;
+  text-align: left;
+  margin: 0;
 }
 
 .example__text{
-  font-family: Arial;
+  font-family: var(--arial-font);
   font-size: 14px;
   line-height: 18px;
 }
 
-.example__expenses{
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.example__value{
-  font-size: 24px;
-  line-height: 24px;
-}
-
 .example__name{
-  font-family: Arial;
-  font-size: 12px;
-  line-height: 12px;
+  font-family: var(--arial-font);
 }
 
 .example__button{
-  font-size: 16px;
-  line-height: 20px;
+  border: none;
   text-transform: uppercase;
+}
+
+@media (max-width: @mobile-width-only) {
+  .example{
+    padding: 20px 25px;
+    background-color: var(--basic-grey-2);
+  }
+  .example__header{
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .example__text{
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .example__expenses{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .example__value{
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .example__name{
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .example__button{
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .example{
+    background-color: var(--basic-white);
+    padding: 43px 35px;
+  }
+  .example__header{
+    margin-bottom: 63px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .example__text{
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

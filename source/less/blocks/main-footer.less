@@ -1,12 +1,31 @@
 .main-footer{
+  display: flex;
   background-color: var(--basic-grey);
-  padding: 39px 96px;
-}
-.main-footer__logo{
-  text-align: center;
 }
 
 .main-footer__image{
   width: 128px;
   height: 24px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-footer{
+    flex-direction: column;
+    padding: 20px 20px;
+  }
+  .main-footer__logo{
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 30px;
+  }
+  .main-footer__logo{
+    text-align: left;
+  }
 }
