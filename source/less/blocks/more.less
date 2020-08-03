@@ -7,16 +7,11 @@ align-items: center;
 .more__header{
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .more__icon{
-  width: 30px;
-  height: 30px;
-  margin-bottom: 15px;
   fill: var(--basic-grey);
 }
 
@@ -37,6 +32,42 @@ align-items: center;
   font-family: var(--arial-font);
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .more__icon{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 15px;
+  }
+  .more__header{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .more__text{
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .more__icon{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 45px;
+  }
+  .more{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 52px;
+  }
+  .more__header{
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .more__text{
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
