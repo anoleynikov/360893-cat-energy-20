@@ -24,6 +24,7 @@
     background-color: var(--basic-grey-2);
   }
   .example__header{
+    margin-left: 20px;
     margin-bottom: 30px;
     font-size: 36px;
     line-height: 40px;
@@ -58,6 +59,7 @@
     padding: 43px 35px;
   }
   .example__header{
+    margin-left: 30px;
     margin-bottom: 63px;
     font-size: 60px;
     line-height: 60px;
@@ -65,5 +67,16 @@
   .example__text{
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: @tablet-width){
+  .example{
+    background-color: var(--basic-grey);
+  }
+  .example__header{
+    margin-bottom: 63px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }

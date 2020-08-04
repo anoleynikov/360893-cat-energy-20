@@ -110,6 +110,15 @@
 }
 
 @media (min-width: @tablet-width) {
+  .programs__header{
+    order:2;
+  }
+  .programs__text{
+    order:3;
+  }
+  .programs__button{
+    order:4;
+  }
   .programs_pro-icon{
     width: 268px;
     height: 112px;
@@ -129,5 +138,18 @@
   .programs__round-slim{
     width: 200px;
     height: 200px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs{
+    display: flex;
+    flex-direction: row;
+  }
+  .programs__item{
+    margin-right: 10px;
+    width: 570px;
+    margin-top: 70px;
+
   }
 }
