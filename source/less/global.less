@@ -22,10 +22,17 @@ body{
   font-weight: normal;
   margin: 0 auto;
   padding: 0;
+  min-width: 320px;
+}
+
+.container{
+  margin: 0 auto;
+  width: 280px;
+  padding: 0 20px;
 }
 
 fieldset{
-    border: 0 none;
+  border: 0 none;
 }
 
 h2{
@@ -33,11 +40,20 @@ h2{
 }
 
 @media (min-width: @tablet-width) {
-
+  body{
+    max-width: @tablet-width;
+  }
+  .container{
+    margin: 0 auto;
+    width: 740px;
+    padding: 0 20px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-
+  body{
+    max-width: @desktop-width;
+  }
 }
 
 .visually-hidden {

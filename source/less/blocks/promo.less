@@ -1,6 +1,16 @@
+.promo{
+  background: url(../img/index-background-mobile@1x.jpg) no-repeat;
+  background-position: center;
+  background-color: var(--basic-green-2);
+  background-size: 320px 305px;
+  color: var(--basic-white);
+  padding-top: 9%;
+  margin: 0 auto;
+  min-height: 305px;
+}
 .promo__header{
   margin: 0;
-  order:1;
+  order: 1;
   text-align: center;
   font-style: normal;
   font-weight: normal;
@@ -49,17 +59,7 @@
     margin-top: 25px;
 }
 
-  .promo{
-    background: url(../img/index-background-mobile@1x.jpg) no-repeat;
-    background-position: center;
-    background-color: var(--basic-green-2);
-    background-size: 320px 305px;
-    color: var(--basic-white);
-    padding-top: 9%;
-    padding-left: 11%;
-    padding-right: 11%;
-    min-height: 305px;
-  }
+
   .promo__can-tablet{
     display: none;
   }
@@ -67,8 +67,8 @@
     display: none;
   }
   .promo__can-mobile{
-    margin-left: 25%;
-    margin-right: 25%;
+    display: block;
+    margin: 0 auto;
   }
 
 
@@ -93,6 +93,7 @@
   }
   .promo__can-tablet{
     display: block;
+    margin: 0 auto;
   }
   .promo__can-mobile{
     position: relative;
@@ -102,6 +103,9 @@
     display: none;
   }
   .promo__header{
+    display: block;
+    margin-right: 60%;
+    margin: 0 auto;
     text-align: left;
     font-size: 60px;
     line-height: 60px;

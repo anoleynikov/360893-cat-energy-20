@@ -1,6 +1,8 @@
 .main-header{
+  margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
+  max-width: 320px;
 }
 .main-header__image-mobile{
   height: 38px;
@@ -46,12 +48,16 @@
 
 @media (min-width: @tablet-width) {
   .main-header{
-    padding: 20px 30px;
+    padding: 20px 56px;
     display: flex;
     flex-direction: row;
+    max-width: @tablet-width;
   }
   .main-header__image-mobile {
     display: none;
+  }
+  .main-header__image-tablet{
+    display: block;
   }
   .main-header__image-desktop{
     display: none;
