@@ -4,7 +4,12 @@
   align-content: center;
   justify-content: center;
 }
-
+.programs__wrapper{
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .programs__item{
   display: flex;
   flex-direction: column;
@@ -103,9 +108,13 @@
 
 @media (min-width: @tablet-width) {
   .programs__item{
-    max-width: 708px;
-    margin-top: 5%;
     }
+  .programs__wrapper{
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .programs__header{
     order:2;
   }
@@ -139,13 +148,19 @@
 
 @media (min-width: @desktop-width) {
   .programs{
+
+  }
+  .programs__wrapper{
     display: flex;
     flex-direction: row;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .programs__item{
     margin-right: 10px;
     width: 570px;
     margin-top: 70px;
-
   }
 }
