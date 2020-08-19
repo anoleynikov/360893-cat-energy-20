@@ -8,18 +8,22 @@
   font-style: normal;
   font-weight: normal;
   text-align: center;
+  padding: 0 20px;
 }
-
-
-.cat-gift{
+.cat-gift__wrapper{
     display: flex;
-    background: url(../img/gift-photo-mobile@1x.jpg) center no-repeat;
     height: 289px;
     padding-left: 20px;
     padding-right: 20px;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
+}
+
+.cat-gift{
+
+    background: url(../img/gift-photo-mobile@1x.jpg) center no-repeat;
+
   }
 .cat-gift__image{
     width: 56px;
@@ -41,13 +45,28 @@
     justify-content: space-around;
     align-items: center;
     background: url(../img/gift-photo-tablet@1x.jpg) center no-repeat;
-    width: auto;
-    height: 200px;
     margin-bottom: 75px;
   }
   .cat-gift__image{
     width: 57px;
     height: 62px;
+  }
+  .cat-gift__wrapper{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      display: flex;
+      height: 200px;
+      width: 700px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+  }
+  .cat-gift__text{
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 0;
   }
 }
 

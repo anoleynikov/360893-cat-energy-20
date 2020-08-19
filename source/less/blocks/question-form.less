@@ -2,6 +2,11 @@
   font-style: normal;
   font-weight: normal;
 }
+.question-form__wrapper{
+    margin: 0 auto;
+    width: 280px;
+    padding: 0 20px;
+}
 
 .question-form__text{
   font-family: var(--oswald-font);
@@ -28,9 +33,12 @@
 
 
 @media (min-width: @tablet-width) {
+  .question-form__wrapper{
+      margin: 0 auto;
+      width: 700px;
+      padding: 0 30px;
+  }
   .question-form{
-    padding-left: 30px;
-    padding-right: 30px;
     color: var(--basic-black);
   }
   .question-form__header{
@@ -50,8 +58,11 @@
 
 @media (min-width: @desktop-width) {
   .question-form{
-    padding-left: 110px;
-    padding-right: 110px;
+  }
+  .question-form__wrapper{
+      margin: 0 auto;
+      width: 1200px;
+      padding: 0 30px;
   }
   .question-form__header{
     color: var(--basic-black);
