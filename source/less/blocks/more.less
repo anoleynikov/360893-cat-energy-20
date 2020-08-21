@@ -5,15 +5,25 @@
 .more__header{
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
 }
 
+.more__wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 280px;
+  padding: 0 20px;
+}
+
+.more__icon{
+  fill: var(--basic-grey);
+}
 
 .more__button{
-  padding: 10px 94px;
+  padding: 21px 94px;
   background-color: var(--basic-grey);
   font-style: normal;
   font-weight: normal;
@@ -29,6 +39,44 @@
   font-family: var(--arial-font);
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
+}
+
+  .more__icon{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 15px;
+  }
+  .more__header{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .more__text{
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+
+@media (min-width: @tablet-width) {
+  .more__icon{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 45px;
+  }
+
+
+  .more__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    padding-top: 52px;
+  }
+  .more__header{
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .more__text{
+    font-size: 16px;
+    line-height: 18px;
+  }
 }

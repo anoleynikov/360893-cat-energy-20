@@ -1,6 +1,4 @@
-.plus-functions{
 
-}
 .plus-functions__labels{
   color: var(--basic-black);
   font-family: var(--oswald-font);
@@ -13,5 +11,31 @@
 }
 
 .plus-functions__checkboxes{
+
+}
+
+
+  .plus-functions{
+    display: flex;
+    flex-direction: column;
+  }
+  .plus-functions__labels{
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+@media (min-width: @tablet-width) {
+  .plus-functions{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .plus-functions__labels{
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
 
 }

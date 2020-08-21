@@ -2,8 +2,6 @@
   font-family: var(--oswald-font);
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
   text-transform: uppercase;
   color: var(--special-dark-grey-2);
 }
@@ -13,7 +11,49 @@
   font-family: var(--oswald-font);
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
   text-transform: uppercase;
+}
+.type{
+  padding: 0;
+}
+
+    .type{
+      display: flex;
+      flex-direction: column;
+    }
+    .type__input{
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    .type__label{
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+
+@media (min-width: @tablet-width) {
+  .type{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 75px;
+  }
+  .type__input{
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .type__label{
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .type{
+    position: absolute;
+    left: 1030px;
+    top: 350px;
+  }
 }

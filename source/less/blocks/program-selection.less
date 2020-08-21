@@ -1,4 +1,6 @@
 .program-selection{
+  display: flex;
+  flex-direction: column;
   font-family: var(--oswald-font);
   font-style: normal;
   font-weight: normal;
@@ -8,17 +10,22 @@
 }
 
 .program-selection__submit{
-  font-family: var(--arial-font);
+  padding: 7px 44px;
+  font-family: var(--oswald-font);
+  color: var(--basic-white);
+  background-color: var(--basic-green);
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
   text-align: center;
+  border: none;
 }
 
 .program-selection__clarification{
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-family: var(--arial-font);
   font-style: normal;
   font-weight: normal;
@@ -26,4 +33,13 @@
   line-height: 16px;
   color: var(--basic-black);
   text-align: center;
+}
+
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
 }
