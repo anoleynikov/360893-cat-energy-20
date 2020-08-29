@@ -77,29 +77,29 @@
 	top: -3%;
 }
 
-  .programs__header{
+.programs__header{
     order:2;
   }
-  .programs__text{
+.programs__text{
     order:3;
   }
-  .programs__button{
+.programs__button{
     order:4;
   }
-  .programs__pro-icon{
+.programs__pro-icon{
     width: 67px;
     height: 28px;
   }
-  .programs__slim-icon{
+.programs__slim-icon{
     width: 36px;
     height: 50px;
   }
-  .programs__round-pro{
+.programs__round-pro{
     order: 1;
     width: 50px;
     height: 50px;
   }
-  .programs__round-slim{
+.programs__round-slim{
     order: 1;
     width: 50px;
     height: 50px;
@@ -107,13 +107,10 @@
 
 
 @media (min-width: @tablet-width) {
-  .programs__item{
-    }
   .programs__wrapper{
     width: 700px;
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 30px;
   }
   .programs__header{
     order:2;
@@ -132,10 +129,6 @@
     width: 140px;
     height: 192px;
   }
-  .programs__round{
-    width: 200px;
-    height: 200px;
-  }
   .programs__round-pro{
     width: 200px;
     height: 200px;
@@ -144,11 +137,16 @@
     width: 200px;
     height: 200px;
   }
+  .programs__item{
+    max-width: 700px;
+    max-height: 372px;
+    margin-top: 30px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .programs{
-
+    margin-top: -240px;
   }
   .programs__wrapper{
     display: flex;
@@ -160,6 +158,40 @@
   }
   .programs__item{
     width: 570px;
+    height: 374px;
     margin-top: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .programs__header{
+    margin-top: -67px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .programs__text{
+    margin-top: 70px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .programs__button{
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .programs__pro-icon{
+    width: 134px;
+    height: 56px;
+  }
+  .programs__slim-icon{
+    width: 70px;
+    height: 97px;
+  }
+  .programs__round-pro{
+    width: 100px;
+    height: 106px;
+  }
+  .programs__round-slim{
+    width: 100px;
+    height: 106px;
   }
 }
