@@ -78,12 +78,13 @@
 }
 @media (min-width: @desktop-width) {
   .additional-item{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 224px 224px auto auto;
+    align-items: center;
   }
   .additional-item__table-row{
     align-self: center;
+    margin-right: 40px;
   }
 
   .additional-item__button{
