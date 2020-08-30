@@ -18,6 +18,15 @@
   border: none;
   text-transform: uppercase;
 }
+.example__weight{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.example__weight-column{
+  display: flex;
+  flex-direction: column;
+}
 .example__wrapper{
   margin: 0 auto;
   width: 280px;
@@ -25,9 +34,14 @@
 }
   .example__header{
     margin-left: 20px;
-    margin-bottom: 30px;
     font-size: 36px;
     line-height: 40px;
+  }
+  .example__mobile-header{
+    display: block;
+  }
+  .example__desktop-header{
+    display: none;
   }
   .example__text{
     font-size: 14px;
@@ -62,11 +76,15 @@
   }
   .example__wrapper{
     margin: 0 auto;
-    width: 700px;
+    width: 680px;
     padding: 0 30px;
   }
+  .example__header-desktop-block{
+    margin: 0 auto;
+    width: 680px;
+  }
   .example__header{
-    margin-left: 30px;
+    margin-left: 0px;
     margin-bottom: 63px;
     font-size: 60px;
     line-height: 60px;
@@ -80,16 +98,26 @@
 @media (min-width: @desktop-width){
   .example{
     background-color: var(--basic-grey);
-  
   }
   .example__wrapper{
     margin: 0 auto;
     width: 1200px;
     padding: 0 15px;
   }
-  .example__header{
+  .example__desktop-header{
+    display: block;
     margin-bottom: 63px;
     font-size: 60px;
     line-height: 60px;
+  }
+  .example__header-desktop-block{
+    margin: 0 auto;
+    width: 1200px;
+  }
+  .example__header{
+  margin-left: -5px;
+  }
+  .example__mobile-header{
+    display: none;
   }
 }
