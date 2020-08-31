@@ -19,6 +19,7 @@
   align-self: baseline;
   font-size: 14px;
   line-height: 18px;
+  margin-left: 20px;
 }
 .how__wrapper{
   margin: 0 auto;
@@ -30,18 +31,20 @@
   width: 280px;
 }
 .how__image-wrap{
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--basic-green);
-  margin-right: 20px;
-  margin-bottom: 20px;
+  min-width: 60px;
+  min-height: 60px;
   width: 60px;
   height: 60px;
+  background-color: var(--basic-green);
 }
 .how__advantages{
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
   }
 @media (min-width: @tablet-width) {
   .how{
@@ -55,8 +58,14 @@
     width: 230px;
     flex-direction: column;
   }
+
   .how__image-wrap{
+    min-width: 80px;
+    min-height: 80px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 31px;
+    margin-left: 20px;
   }
   .how__header{
     margin-left: 0px;
@@ -69,10 +78,6 @@
     font-size: 16px;
     line-height: 24px;
   }
-  .how__image-wrap{
-    width: 80px;
-    height: 80px;
-  }
   .how__header-wrapper{
     margin: 0 auto;
     width: 680px;
@@ -84,8 +89,30 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
   }
+  .how__advantages::after{
+    z-index: -1;
+    color: var(--basic-grey);
+    font-family: var(--oswald-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 280px;
+    position: relative;
+    top: -260px;
+    left: 120px;
+  }
+    .how__first::after {
+    content: "1";
+    }
+    .how__second::after {
+    content: "2";
+    }
+    .how__third::after {
+    content: "3";
+    }
+    .how__fourth::after {
+    content: "4";
+    }
 }
 
 @media (min-width: @desktop-width) {
@@ -107,6 +134,37 @@
   .how__advantages{
     margin-right: 100px;
   }
+  .how__advantages::after{
+    z-index: -1;
+    color: var(--basic-grey);
+    font-family: var(--oswald-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 280px;
+    position: relative;
+
+  }
+  .how__first::after {
+  content: "1";
+  top: -280px;
+  left: 120px;
+  }
+  .how__second::after {
+  content: "2";
+  top: -285px;
+  left: 120px;
+  }
+  .how__third::after {
+  content: "3";
+  top: -309px;
+  left: 120px;
+  }
+  .how__fourth::after {
+  content: "4";
+  top: -304px;
+  left: 120px;
+  }
+
   .how__header-wrapper{
     margin: 0 auto;
     width: 1200px;

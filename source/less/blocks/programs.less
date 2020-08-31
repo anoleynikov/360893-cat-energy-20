@@ -24,8 +24,11 @@
   padding-right: 10px;
   padding-bottom: 10px;
 }
-
+.programs__text-wrapper{
+  order: 2;
+}
 .programs__header{
+  margin-top: -32px;
   font-style: normal;
   font-weight: normal;
   color: var(--basic-black);
@@ -48,10 +51,11 @@
   font-size: 16px;
   line-height: 16px;
 }
+
 .programs__round-pro{
   position: relative;
   order: 2;
-  left: 10px;
+  left: 2px;
   top: 10px;
   border-radius: 50%;
   background-color: var(--basic-green);
@@ -60,7 +64,7 @@
 .programs__round-slim{
   position: relative;
   order: 2;
-  left: 10px;
+  left: 4px;
   top: 10px;
   border-radius: 50%;
   background-color: var(--basic-green);
@@ -77,15 +81,6 @@
 	top: -3%;
 }
 
-.programs__header{
-    order:2;
-  }
-.programs__text{
-    order:3;
-  }
-.programs__button{
-    order:4;
-  }
 .programs__pro-icon{
     width: 67px;
     height: 28px;
@@ -112,15 +107,7 @@
     margin: 0 auto;
     padding: 20px 30px;
   }
-  .programs__header{
-    order:2;
-  }
-  .programs__text{
-    order:3;
-  }
-  .programs__button{
-    order:4;
-  }
+
   .programs__pro-icon{
     width: 268px;
     height: 112px;
@@ -130,23 +117,40 @@
     height: 192px;
   }
   .programs__round-pro{
+    order:2;
     width: 200px;
     height: 200px;
+
+  }
+  .programs__icon{
+    position: relative;
+    top: -4px;
+    left: 60px;
   }
   .programs__round-slim{
+    order:2;
     width: 200px;
     height: 200px;
   }
   .programs__item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
     max-width: 700px;
     max-height: 372px;
     margin-top: 30px;
+  }
+  .programs__text-wrapper{
+    order: 1;
   }
 }
 
 @media (min-width: @desktop-width) {
   .programs{
     margin-top: -240px;
+  }
+  .programs__text-wrapper{
+    order: 2;
   }
   .programs__wrapper{
     display: flex;
@@ -157,6 +161,7 @@
     padding-bottom: 20px;
   }
   .programs__item{
+    display: flex;
     width: 570px;
     height: 374px;
     margin-top: 70px;
@@ -177,6 +182,11 @@
     margin-top: 30px;
     font-size: 20px;
     line-height: 30px;
+  }
+  .programs__icon{
+    top: 4px;
+    left: -180px;
+    order: 1;
   }
   .programs__pro-icon{
     width: 134px;
