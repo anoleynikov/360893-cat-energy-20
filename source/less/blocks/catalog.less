@@ -1,19 +1,94 @@
-  .catalog__wrapper{
-    margin: 0 auto;
+.catalog__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+.catalog__header{
+    padding-top: 27px;
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: none;
+    color:  var(--basic-black);
     width: 280px;
-    padding: 0 20px;
-  }
-@media (min-width: @tablet-width) {
-  .catalog__wrapper{
     margin: 0 auto;
-    width: 700px;
-    padding: 0 20px;
+    margin-bottom: 41px;
+}
+.catalog__item-link{
+  text-decoration: none;
+}
+.catalog__header::before {
+    content: "";
+    position: absolute;
+    width: 200vw;
+    top: 0;
+    left: -40vw;
+    height: 1px;
+    background-color: var(--special-grey-2);
+}
+.catalog__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+    flex-direction: column;
+    align-items: center;
+}
+.catalog__pic {
+    width: 140px;
+    height: 144px;
+}
+.catalog__table {
+    font-family: var(--arial-font);
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: none;
+    color: #444444;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.catalog__table-list {
+    display: flex;
+    justify-content: space-between;
+}
+.catalog__table-list:first-child {
+    padding-top: 0;
+}
+.catalog__button {
+    padding: 0;
+    font-family: var(--oswald-font);
+    color: var(--basic-white);
+    background-color: var(--basic-green);
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    border: none;
+    padding: 0;
+    display: block;
+    width: 280px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 40px;
+}
+.catalog__table {
+    font-family: var(--arial-font);
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: none;
+    color: var(--special-dark-grey);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 @media (min-width: @tablet-width) {
   .catalog__wrapper{
@@ -25,13 +100,66 @@
     flex-wrap: wrap;
     padding-left: 30px;
     padding-right: 30px;
-    justify-content: space-around;
   }
+  .catalog__button {
+    width: 248px;
+    margin: 0 auto;
+}
+.catalog__button--additional{
+    width: 632px;
+}
+  .catalog__table {
+    font-size: 16px;
+}
+.catalog__table-list {
+    border-bottom: 1px solid #c4c4c4;
+    padding-top: 7px;
+    padding-bottom: 9px;
+}
+  .catalog__header{
+    border: none;
+    margin-bottom: 164px;
+    font-size: 60px;
+    line-height: 60px;
+    width: 708px;
+    margin-top: 65px;
+    padding: 0;
+  }
+  .catalog__header::before {
+      display: none;
+  }
+  .catalog__wrapper {
+    width: 709px;
+}
+.catalog__list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.catalog__table {
+    font-size: 16px;
+}
+.catalog__pic--small {
+    width: 324px;
+    height: 174px;
+    position: relative;
+    top: -45px;
+    margin-bottom: -45px;
+}
+.catalog__pic--big {
+    width: 324px;
+    height: 208px;
+    position: relative;
+    top: -81px;
+    margin-bottom: -81px;
+}
+
 }
 @media (min-width: @desktop-width) {
   .catalog__wrapper{
     margin: 0 auto;
-    width: 1200px;
+    width: 1220px;
     padding: 0 20px;
     display: flex;
     flex-direction: row;
@@ -40,4 +168,29 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+  .catalog__pic--small {
+    width: 245px;
+    height: 174px;
+    position: relative;
+    top: -54px;
+    margin-bottom: -54px;
+}
+.catalog__pic--big {
+    width: 245px;
+    height: 208px;
+    position: relative;
+    top: -88px;
+    margin-bottom: -88px;
+}
+  .catalog__header{
+    width: 1220px;
+    margin-top: 74px;
+  }
+  .catalog__table-list {
+      padding-left: 4px;
+      width: 170px;
+  }
+  .catalog__button {
+    width: 168px;
+}
 }

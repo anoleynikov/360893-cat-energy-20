@@ -45,13 +45,44 @@
 
 
 @media (min-width: @tablet-width) {
-
+  .main-header{
+  margin-top: 24px;
+  }
   .main-header__wrapper{
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    width: 700px;
+    width: 708px;
+    min-height: 52px;
+    width: 708px;
     margin: 0 auto;
-    padding: 20px 56px;
+    padding: 0;
+  }
+  .main-header__menu{
+    margin-left: 50px;
+  }
+  .main-header__menu-list{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 5px;
+  }
+  .main-header__menu-item{
+    margin-right: 15px;
+  }
+  .main-header__link--active{
+    position: relative;
+  }
+  .main-header__link--active::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--basic-green);
+    bottom: -12px;
+    left: 0px;
   }
   .main-header__image-mobile {
     display: none;
@@ -65,14 +96,7 @@
   .main-header__icon{
     display: none;
   }
-  .main-header__menu-list{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-  }
-  .main-header__menu-item{
-    margin-right: 15px;
-  }
+
   .main-header__link{
     color: var(--basic-black);
     font-family: var(--oswald-font);
@@ -86,12 +110,25 @@
 }
 
 @media (min-width: @desktop-width){
+  .main-header{
+    margin-top: 53px;
+  }
   .main-header__wrapper{
     display: flex;
     flex-direction: row;
-    width: 1200px;
     margin: 0 auto;
-    padding: 20px 56px;
+    width: 1220px;
+    min-height: 59px;
+    justify-content: space-between;
+  }
+  .main-header__link--active::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--basic-green);
+    bottom: -12px;
+    left: 0px;
   }
   .main-header__image-mobile {
     display: none;
@@ -109,12 +146,26 @@
     display: flex;
     flex-direction: row;
     list-style: none;
+    padding: 0;
+
+  }
+  .main-header__link--active::after{
+    background-color: var(--basic-white);
+  }
+  .main-header__link--active::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--basic-white);
+    bottom: -12px;
+    left: 0px;
   }
   .main-header__menu{
-    position: relative;
-    left: 600px;
   }
   .main-header__menu-item{
+    font-size: 20px;
+    line-height: 30px;
     z-index: 5;
     margin-right: 30px;
   }

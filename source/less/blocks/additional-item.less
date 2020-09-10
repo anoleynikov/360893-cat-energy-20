@@ -64,7 +64,9 @@
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 20px;
+
   }
+
 
 @media (min-width: @tablet-width) {
   .additional-item{
@@ -75,23 +77,17 @@
     padding-right: 20px;
     margin-bottom: 20px;
   }
+
 }
 @media (min-width: @desktop-width) {
-  .additional-item{
-    display: grid;
-    grid-template-columns: 224px 224px auto auto;
-    align-items: center;
+  .additional__item:first-child {
+      border-top: 1px solid #cdcdcd;
   }
-  .additional-item__table-row{
-    align-self: center;
-    margin-right: 40px;
-  }
+  .additional__item {
+    justify-content: start;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
+}
 
-  .additional-item__button{
-    display: block;
-    width: 244px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-  }
 }

@@ -24,7 +24,7 @@
 .how__wrapper{
   margin: 0 auto;
   width: 280px;
-  padding: 0 20px;
+  max-width: 280px;
 }
 .how__header-wrapper{
   margin: 0 auto;
@@ -48,8 +48,6 @@
   }
 @media (min-width: @tablet-width) {
   .how{
-    padding-left: 30px;
-    padding-right: 30px;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -80,15 +78,15 @@
   }
   .how__header-wrapper{
     margin: 0 auto;
-    width: 680px;
+    width: 708px;
   }
   .how__wrapper{
     margin: 0 auto;
-    width: 680px;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 708px;
+    max-width: 708px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
   }
   .how__advantages::after{
     z-index: -1;
@@ -98,24 +96,34 @@
     font-weight: normal;
     font-size: 280px;
     position: relative;
-    top: -260px;
-    left: 120px;
+
   }
     .how__first::after {
     content: "1";
+    top: -288px;
+    left: 120px;
     }
     .how__second::after {
     content: "2";
+    top: -316px;
+    left: 120px;
     }
     .how__third::after {
     content: "3";
+    top: -290px;
+    left: 120px;
     }
     .how__fourth::after {
     content: "4";
+    top: -316px;
+    left: 120px;
     }
 }
 
 @media (min-width: @desktop-width) {
+  .how{
+    margin-top: 70px;
+  }
   .how__header{
     margin-left: 0px;
     margin-bottom: 32px;
@@ -124,8 +132,9 @@
     text-align: left;
   }
   .how__wrapper{
+    max-width: 1220px;
+    width: 1220px;
     margin: 0 auto;
-    width: 1200px;
     padding: 0 20px;
     display: flex;
     flex-direction: row;
@@ -142,26 +151,25 @@
     font-weight: normal;
     font-size: 280px;
     position: relative;
-
   }
   .how__first::after {
   content: "1";
-  top: -280px;
+  top: -313px;
   left: 120px;
   }
   .how__second::after {
   content: "2";
-  top: -285px;
+  top: -313px;
   left: 120px;
   }
   .how__third::after {
   content: "3";
-  top: -309px;
+  top: -315px;
   left: 120px;
   }
   .how__fourth::after {
   content: "4";
-  top: -304px;
+  top: -318px;
   left: 120px;
   }
 

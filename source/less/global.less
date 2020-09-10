@@ -16,8 +16,10 @@
   --oswald-font: Oswald, Arial, sans-serif;
   --arial-font: Arial;
 }
-
-
+html{
+  width: 100%;
+  overflow-x: hidden;
+}
 body{
   font-family: var(--oswald-font);
   font-style: normal;
@@ -26,6 +28,17 @@ body{
   padding: 0;
   min-width: 320px;
   width: 100%;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 fieldset{
@@ -34,14 +47,6 @@ fieldset{
 
 h2{
   margin: 0;
-}
-
-@media (min-width: @tablet-width) {
-
-}
-
-@media (min-width: @desktop-width) {
-
 }
 
 .visually-hidden {
