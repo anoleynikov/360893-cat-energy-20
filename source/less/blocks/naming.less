@@ -1,8 +1,16 @@
 .naming__input{
   font-family: var(--oswald-font);
+  color: var(--special-dark-grey);
+  border: 1px solid  var(--basic-border);
+  margin-left: 10px;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 14px;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 .naming__label{
@@ -10,29 +18,28 @@
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
 }
-
+.naming__input-wrap{
+  margin-bottom: 25px;
+}
 .naming{
+  color: var(--special-dark-grey);
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
 }
-
-  .naming{
-    color: var(--special-dark-grey);
-  }
-  .naming__input{
-    font-family: var(--oswald-font);
-    font-size: 16px;
-    line-height: 18px;
-  }
-  .naming__label{
-    font-family: var(--oswald-font);
-    font-size: 16px;
-    line-height: 18px;
-  }
-
+.naming__name-input{
+  padding-right: 58px;
+}
+.naming__weight-input{
+  padding-right: 40px;
+}
+.naming__age-input{
+  padding-right: 8px;
+}
 @media (min-width: @tablet-width) {
   .naming{
     color: var(--basic-black);

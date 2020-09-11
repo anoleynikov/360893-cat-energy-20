@@ -8,9 +8,15 @@
   line-height: 18px;
   color: var(--basic-black);
 }
+.program-selection__wrapper{
+  display: flex;
+  flex-direction: column;
 
+}
 .program-selection__submit{
-  padding: 7px 44px;
+  display: block;
+  width: 280px;
+  height: 40px;
   font-family: var(--oswald-font);
   color: var(--basic-white);
   background-color: var(--basic-green);
@@ -37,9 +43,35 @@
 
 
 @media (min-width: @tablet-width) {
-
+  .program-selection__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+  .program-selection__submit{
+    width: 282px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 52px;
+  }
+  .program-selection__clarification{
+    font-size: 20px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-
+  .program-selection__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .program-selection__clarification{
+  text-align: left;
+  }
+  .program-selection__submit{
+    width: 568px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 52px;
+    margin-bottom: 30px;
+  }
 }

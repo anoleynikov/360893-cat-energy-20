@@ -1,28 +1,59 @@
 .map{
     width: 100%;
-    height: 362px;
-    background: url(../img/bg-map-mobile@1x.png) no-repeat;
+    min-height: 362px;
     background-color: var(--basic-grey);
-    background-size: 320px 362px;
-    background-position: center;
   }
-
-
+.map__wrapper{
+    width: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.map__mobile{
+  display: block;
+}
+.map__tablet{
+  display: none;
+}
+.map__desktop{
+  display: none;
+}
 @media (min-width: @tablet-width) {
   .map{
-    width: 100%;
+    box-sizing: border-box;
     height: 400px;
-    background: url(../img/bg-map-tablet@1x.png) no-repeat;
-    background-color: var(--basic-grey);
-    background-position: center;
+  }
+  .map__wrapper{
+    box-sizing: border-box;
+    width: 768px;
+    max-width: 768px;
+  }
+  .map__mobile{
+    display: none;
+  }
+  .map__tablet{
+    display: block;
+  }
+  .map__desktop{
+    display: none;
   }
 }
 @media (min-width: @desktop-width) {
   .map{
+    width: auto;
     height: 400px;
-    background: url(../img/bg-map-desktop@1x.png) no-repeat;
     background-color: var(--basic-grey);
-    background-position: center;
   }
-
+  .map__wrapper{
+    width: 1440px;
+    max-width: 1440px;
+  }
+  .map__mobile{
+    display: none;
+  }
+  .map__tablet{
+    display: none;
+  }
+  .map__desktop{
+    display: block;
+  }
 }

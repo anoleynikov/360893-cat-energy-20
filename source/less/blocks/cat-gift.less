@@ -9,6 +9,7 @@
   font-weight: normal;
   text-align: center;
   padding: 0 20px;
+  max-width: 161px
 }
 .cat-gift__wrapper{
     display: flex;
@@ -18,12 +19,11 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
+    margin: 0 auto;
 }
 
 .cat-gift{
-
     background: url(../img/gift-photo-mobile@1x.jpg) center no-repeat;
-
   }
 .cat-gift__image{
     width: 56px;
@@ -46,6 +46,8 @@
     align-items: center;
     background: url(../img/gift-photo-tablet@1x.jpg) center no-repeat;
     margin-bottom: 75px;
+    margin-top: 69px;
+    margin-bottom: 76px;
   }
   .cat-gift__image{
     width: 57px;
@@ -61,7 +63,6 @@
       width: 700px;
       padding-left: 20px;
       padding-right: 20px;
-
   }
   .cat-gift__text{
       font-size: 16px;
@@ -72,6 +73,21 @@
 
 @media (min-width: @desktop-width) {
   .cat-gift{
-    display: none;
+  width: 245px;
+  height: 289px;
+  background: url(../img/gift-photo-desktop@1x.jpg) center no-repeat;
+  margin: 0;
+  margin-left: 80px;
+  }
+  .cat-gift__image{
+    width: 80px;
+    height: 83px;
+    margin: 0;
+  }
+  .cat-gift__wrapper{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

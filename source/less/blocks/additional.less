@@ -1,78 +1,181 @@
-.additional__header{
-  font-family: var(--oswald-font);
-  font-style: normal;
-  font-weight: normal;
-  margin-top: 0;
-  text-align: left;
-  margin-bottom: 80px;
-  padding-left: 67px;
-}
-.additional__wrapper{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  width: 280px;
-  padding: 0 20px;
-}
-  .additional__header{
+.additional__header {
+    font-weight: normal;
+    text-transform: none;
     font-size: 24px;
     line-height: 24px;
-    padding-left: 21px;
-    margin-top: 50px;
+    width: 280px;
+    margin: 0 auto;
     margin-bottom: 35px;
-  }
-
-
-@media (min-width: @tablet-width) {
-  .additional{
-    margin-bottom: 70px;
-  }
-  .additional__header{
-    font-size: 36px;
-    line-height: 36px;
-  }
-  .additional__wrapper{
+    margin-top: 28px;
+    position: relative;
+}
+.additional__header::after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 2px;
+    left: 248px;
+    top: 50%;
+    background-color: #68b738;
+}
+.additional__wrapper {
+    width: 280px;
+    margin: 0 auto;
+}
+.additional__list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    width: 700px;
-    padding: 0 20px;
-  }
 }
-@media (min-width: @tablet-width) {
-  .additional{
-    margin-bottom: 70px;
-  }
-  .additional__header{
-    font-size: 36px;
-    line-height: 36px;
-  }
-  .additional__wrapper{
+.additional__item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    width: 700px;
-    padding: 0 20px;
+    padding-top: 13px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.additional__item:first-child {
+    border-top: 1px solid #cdcdcd;
+}
+.additional__item-header {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 13px;
+}
+.additional-table__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.additional-table__item {
+    font-family: "Arial", "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0;
+    margin: 0;
+    color: #444444;
+}
+@media (min-width: @tablet-width) {
+
+  .additional__header {
+    font-size: 36px;
+    line-height: 36px;
+    width: 708px;
+    margin-top: 68px;
+    margin-bottom: 80px;
+    padding-left: 37px;
   }
+  .additional__header::before {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 2px;
+    left: -100vw;
+    top: 25px;
+    background-color: #68b738;
+}
+.additional__header::after {
+    left: 411px;
+    top: 25px;
+}
+.additional__wrapper{
+    width: 708px;
+    border: 1px solid #cdcdcd;
+}
+.additional__item {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 28px;
+    padding-top: 24px;
+}
+.additional__item-header {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 26px;
+    text-transform: uppercase;
+}
+.additional-table__list {
+    margin-bottom: 20px;
+}
+.additional-table__item {
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 51px;
+}
+.catalog__button--additional{
+    width: 632px;
 }
 
+
+
+}
 @media (min-width: @desktop-width) {
   .additional{
     margin-bottom: 70px;
   }
-  .additional__header{
-    font-size: 36px;
-    line-height: 36px;
-  }
-  .additional__wrapper{
+  .additional__header {
+    width: 1220px;
+    margin-top: 76px;
+    margin-bottom: 81px;
+    padding: 0;
+}
+.additional__wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 86px;
+}
+  .additional__header::before {
+    left: calc(-100vw - 40px);
+}
+.additional__header::after {
+    left: 373px;
+}
+.additional__wrapper {
+    width: 895px;
+    border: none;
+    margin: 0;
+}
+.additional__list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    width: 1200px;
-    padding: 0 20px;
+}
+.additional__item-header {
+    margin: 0;
+    width: 325px;
+}
+.additional-table__list {
+  margin: 0;
+  width: 286px;
+  margin-right: 36px;
+  padding-top: 6px;
   }
+
+  .additional-table__item {
+      margin: 0;
+  }
+  .catalog__button--additional {
+      width: 244px;
+  }
+
 }

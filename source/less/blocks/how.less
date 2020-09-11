@@ -11,8 +11,7 @@
   margin-bottom: 38px;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
-  margin-right: 20px;
+  margin-left: 0px;
 }
 .how__text{
   margin: 0;
@@ -20,30 +19,35 @@
   align-self: baseline;
   font-size: 14px;
   line-height: 18px;
+  margin-left: 20px;
 }
 .how__wrapper{
   margin: 0 auto;
   width: 280px;
-  padding: 0 20px;
+  max-width: 280px;
+}
+.how__header-wrapper{
+  margin: 0 auto;
+  width: 280px;
 }
 .how__image-wrap{
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--basic-green);
-  margin-right: 20px;
-  margin-bottom: 20px;
+  min-width: 60px;
+  min-height: 60px;
   width: 60px;
   height: 60px;
+  background-color: var(--basic-green);
 }
 .how__advantages{
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
   }
 @media (min-width: @tablet-width) {
   .how{
-    padding-left: 30px;
-    padding-right: 30px;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -52,11 +56,17 @@
     width: 230px;
     flex-direction: column;
   }
+
   .how__image-wrap{
+    min-width: 80px;
+    min-height: 80px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 31px;
+    margin-left: 20px;
   }
   .how__header{
-    margin-left: 30px;
+    margin-left: 0px;
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 32px;
@@ -66,36 +76,105 @@
     font-size: 16px;
     line-height: 24px;
   }
-  .how__image-wrap{
-    width: 80px;
-    height: 80px;
+  .how__header-wrapper{
+    margin: 0 auto;
+    width: 708px;
   }
   .how__wrapper{
     margin: 0 auto;
-    width: 680px;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 708px;
+    max-width: 708px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
   }
+  .how__advantages::after{
+    z-index: -1;
+    color: var(--basic-grey);
+    font-family: var(--oswald-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 280px;
+    position: relative;
+
+  }
+    .how__first::after {
+    content: "1";
+    top: -288px;
+    left: 120px;
+    }
+    .how__second::after {
+    content: "2";
+    top: -316px;
+    left: 120px;
+    }
+    .how__third::after {
+    content: "3";
+    top: -290px;
+    left: 120px;
+    }
+    .how__fourth::after {
+    content: "4";
+    top: -316px;
+    left: 120px;
+    }
 }
 
-
 @media (min-width: @desktop-width) {
+  .how{
+    margin-top: 70px;
+  }
   .how__header{
-    margin-left: 112px;
+    margin-left: 0px;
     margin-bottom: 32px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
   }
   .how__wrapper{
+    max-width: 1220px;
+    width: 1220px;
     margin: 0 auto;
-    width: 1200px;
     padding: 0 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+  }
+  .how__advantages{
+    margin-right: 100px;
+  }
+  .how__advantages::after{
+    z-index: -1;
+    color: var(--basic-grey);
+    font-family: var(--oswald-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 280px;
+    position: relative;
+  }
+  .how__first::after {
+  content: "1";
+  top: -313px;
+  left: 120px;
+  }
+  .how__second::after {
+  content: "2";
+  top: -313px;
+  left: 120px;
+  }
+  .how__third::after {
+  content: "3";
+  top: -315px;
+  left: 120px;
+  }
+  .how__fourth::after {
+  content: "4";
+  top: -318px;
+  left: 120px;
+  }
+
+  .how__header-wrapper{
+    margin: 0 auto;
+    width: 1200px;
   }
 }

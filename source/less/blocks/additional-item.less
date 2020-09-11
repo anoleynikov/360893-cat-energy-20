@@ -64,7 +64,9 @@
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 20px;
+
   }
+
 
 @media (min-width: @tablet-width) {
   .additional-item{
@@ -75,4 +77,17 @@
     padding-right: 20px;
     margin-bottom: 20px;
   }
+
+}
+@media (min-width: @desktop-width) {
+  .additional__item:first-child {
+      border-top: 1px solid #cdcdcd;
+  }
+  .additional__item {
+    justify-content: start;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
+}
+
 }
