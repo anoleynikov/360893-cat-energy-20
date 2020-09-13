@@ -292,3 +292,23 @@
     display: none;
   }
 }
+
+
+.slider__pic {
+  width: 320px;
+  height: 240px;
+
+  &--slim {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    height: 517px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 690px;
+    height: 517px;
+  }
+}
